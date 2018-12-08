@@ -1,0 +1,5 @@
+=== GENERATE TF RECORDS ===
+python tfrecord.py --csv_input=./allAnnotations.csv --json_input=./signBounding.json --test_output_path=./testData.tfrecords --train_output_path=./trainData.tfrecords
+
+=== EXPORT GRAPH ===
+python C:\Users\Jonathan\Desktop\detection-automobile\models-master\research\object_detection\export_inference_graph.py --input_type image_tensor --pipeline_config_path C:\Users\Jonathan\Desktop\detection-automobile\models\model\pipeline.config --trained_checkpoint_prefix C:\Users\Jonathan\Desktop\detection-automobile\models\model\model.ckpt-27231 --output_directory .\exportedModels
