@@ -5,7 +5,8 @@ Uses Tenorflow's Mobilenet v2 SSD, and the UCSD LISA dataset (Supplemented with 
 
 ## Overview
 - Install Tensorflow and Tensorboard
-- Assemble TF Record files for ingestion by Tensorflow using dataset/tfRecord.py.
+- Download a copy of the LISA Dataset (link below) and copy /vid0-vid10 to /data 
+- Assemble TF Record files for ingestion by Tensorflow using dataset/tfRecord.py. This will also generate an /eval_set folder for running manual model verification later.
 - Inspect the quality of your tfRecord using dataset/inspector.py (Only displays one annotation per frame)
 - Copy your testing and training records to /data
 - Download a copy of the Mobilenet architecture from the Tensorflow link below and place in the models\model folder
@@ -13,5 +14,6 @@ Uses Tenorflow's Mobilenet v2 SSD, and the UCSD LISA dataset (Supplemented with 
 
 
 ## Resources
+- http://cvrr.ucsd.edu/LISA/lisa-traffic-sign-dataset.html
 - https://github.com/tensorflow/models/tree/master/research/object_detection
 - https://towardsdatascience.com/detecting-pikachu-on-android-using-tensorflow-object-detection-15464c7a60cd
