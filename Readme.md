@@ -19,7 +19,7 @@ Uses Tenorflow's Mobilenet v2 SSD, and the UCSD LISA dataset (Supplemented with 
 - Run tensorboard --logdir=.\models\model to see training updates 
 
 ### Finishing up
-- Run the Export Graph command from commands.txt to save your trained model.
+- Run the Export Graph command from commands.txt to save your trained model. Alternatively, use my pretrained model located in the ./exportedModels directory
 
 ## Notes
 It is highly recomended to use a Python Environment and package manager to simplify installing and conflict resolution. I used Miniconda.
